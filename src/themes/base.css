@@ -1,0 +1,45 @@
+/* Typorium base content styles (the equivalent of Typora's base.css). Applies to
+   exported/printed documents, which use real HTML elements inside #write. */
+:root { --monospace: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace; --text-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+#write { max-width: 860px; margin: 0 auto; padding: 30px; font-family: var(--text-font); font-size: var(--write-font-size, 16px); line-height: 1.6; color: var(--text-color); word-wrap: break-word; }
+#write > :first-child { margin-top: 0; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; break-after: avoid-page; }
+#write h1 { font-size: 2.25em; } #write h2 { font-size: 1.75em; } #write h3 { font-size: 1.5em; }
+#write h4 { font-size: 1.25em; } #write h5 { font-size: 1em; } #write h6 { font-size: 1em; color: #777; }
+#write p { margin: 0.8em 0; }
+#write a { color: var(--link-color, var(--primary-color, #4183c4)); text-decoration: none; }
+#write blockquote { margin: 0.8em 0; padding: 0 15px; border-left: 4px solid var(--blockquote-border, #dfe2e5); color: var(--blockquote-color, #777); }
+#write ul, #write ol { padding-left: 30px; margin: 0.8em 0; }
+#write li > p { margin: 0.2em 0; }
+#write .task-list-item { list-style-type: none; }
+#write .task-list-item-checkbox { margin: 0 0.4em 0 -1.4em; vertical-align: middle; }
+#write code { font-family: var(--monospace); font-size: 0.9em; background: var(--inline-code-bg, #f3f4f4); padding: 0 2px; border-radius: 3px; }
+#write pre.md-fences { font-family: var(--monospace); font-size: 0.9em; line-height: 1.5; background: var(--code-block-bg, #f8f8f8); border: 1px solid var(--code-block-border, #e7eaed); border-radius: 3px; padding: 8px 1em; overflow-x: auto; white-space: pre-wrap; break-inside: avoid; }
+#write pre.md-fences code { background: transparent; padding: 0; font-size: 1em; }
+#write table { border-collapse: collapse; width: 100%; margin: 0.8em 0; break-inside: auto; }
+#write table th, #write table td { border: 1px solid var(--table-border-color, #dfe2e5); padding: 6px 13px; }
+#write table tr:nth-child(2n) { background: var(--table-stripe-bg, #f8f8f8); }
+#write tr { break-inside: avoid; }
+#write hr { height: 2px; padding: 0; margin: 16px 0; background: var(--hr-color, #e7e7e7); border: 0; }
+#write img { max-width: 100%; }
+#write mark { background: var(--mark-bg-color, #ffef9e); color: inherit; }
+#write kbd { font-family: var(--monospace); font-size: 0.85em; padding: 0.1em 0.4em; border: 1px solid #ccc; border-bottom-width: 2px; border-radius: 4px; background: #f7f7f7; }
+#write .md-math-block { text-align: center; margin: 0.8em 0; overflow-x: auto; break-inside: avoid; }
+#write .md-diagram { text-align: center; margin: 0.8em 0; break-inside: avoid; }
+#write .md-diagram svg { max-width: 100%; height: auto; }
+#write .md-toc { margin: 0.8em 0; }
+#write .md-toc-item { display: block; line-height: 1.7; }
+#write .md-toc-h2 { margin-left: 2em; } #write .md-toc-h3 { margin-left: 4em; } #write .md-toc-h4 { margin-left: 6em; } #write .md-toc-h5 { margin-left: 8em; } #write .md-toc-h6 { margin-left: 10em; }
+#write .footnotes { font-size: 0.9em; color: var(--footnote-color, inherit); }
+#write .footnotes-sep { margin-top: 2em; }
+#write .md-alert { color: var(--text-color); }
+#write .md-alert-note { border-left-color: #0969da; } #write .md-alert-tip { border-left-color: #1a7f37; } #write .md-alert-important { border-left-color: #8250df; } #write .md-alert-warning { border-left-color: #9a6700; } #write .md-alert-caution { border-left-color: #cf222e; }
+#write .md-alert-text { font-weight: 600; }
+#write .md-alert-text-note { color: #0969da; } #write .md-alert-text-tip { color: #1a7f37; } #write .md-alert-text-important { color: #8250df; } #write .md-alert-text-warning { color: #9a6700; } #write .md-alert-text-caution { color: #cf222e; }
+#write .md-meta-block { font-family: var(--monospace); font-size: 0.85em; background: var(--meta-block-bg, #f5f5f5); padding: 8px 1em; }
+@media print {
+  html, body { background: var(--print-bg, #fff) !important; }
+  #write { max-width: none; padding: 0; }
+  #write h1, #write h2, #write h3 { break-after: avoid-page; }
+  #write pre, #write blockquote, #write table, #write img, #write .md-math-block { break-inside: avoid; }
+}

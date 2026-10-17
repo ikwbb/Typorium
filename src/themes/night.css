@@ -1,0 +1,21 @@
+/* Typorium "Night" theme — dark slate. Typora theme format. */
+:root {
+  --bg-color: #363b40; --text-color: #b8bfc6; --side-bar-bg-color: #2e3033; --control-text-color: #b7b7b7;
+  --item-hover-bg-color: #70717d; --active-file-bg-color: #4a4f55; --active-file-border-color: #b8bfc6;
+  --primary-color: #a3d5fe; --window-border: 1px solid #555; --select-text-bg-color: #4a89dc; --caret-color: #ffffff;
+  --text-font: "Helvetica Neue", Helvetica, Arial, -apple-system, "Segoe UI", "PingFang SC", sans-serif;
+  --monospace: ui-monospace, Menlo, Consolas, monospace;
+  --code-block-bg: #333639; --code-block-border: #4a4f55; --inline-code-bg: #4a4f55; --blockquote-border: #474d54; --blockquote-color: #9da5ad;
+  --hr-color: #474d54; --table-border-color: #474d54; --table-stripe-bg: #3d4248; --md-char-color: #6c727a; --meta-content-color: #8b939b;
+  --mark-bg-color: #5c5a3a; --link-color: #e0e0e0; --meta-block-bg: #303437; --kbd-bg: #44494f; --kbd-border: #5b6168;
+  --search-hit-bg-color: rgba(255, 200, 0, 0.35); --h6-color: #9da5ad;
+  --cm-keyword: #c792ea; --cm-number: #f78c6c; --cm-def: #82aaff; --cm-type: #ffcb6b; --cm-property: #82aaff; --cm-operator: #89ddff;
+  --cm-comment: #7b858f; --cm-string: #c3e88d; --cm-string-2: #89ddff; --cm-meta: #ffcb6b; --cm-builtin: #82aaff; --cm-tag: #f07178; --cm-attribute: #ffcb6b; --cm-header: #f07178;
+  color-scheme: dark;
+}
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { color: #dedede; }
+#write h1 { font-size: 2.2em; border-bottom: 1px solid #474d54; padding-bottom: 0.3em; }
+#write h2 { font-size: 1.8em; border-bottom: 1px solid #474d54; padding-bottom: 0.3em; }
+#write strong { color: #dedede; }
+#write a { color: #e0e0e0; text-decoration: underline; }
+#write table th { background: #3d4248; }

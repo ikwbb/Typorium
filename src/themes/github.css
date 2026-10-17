@@ -1,0 +1,17 @@
+/* Typorium "Github" theme — clean, GitHub-flavoured. Typora theme format. */
+:root {
+  --bg-color: #ffffff; --text-color: #333333; --side-bar-bg-color: #fafafa; --control-text-color: #777777;
+  --item-hover-bg-color: rgba(0, 0, 0, 0.05); --active-file-bg-color: #eeeeee; --active-file-border-color: #8d8df0;
+  --primary-color: #4183c4; --window-border: 1px solid #eeeeee; --select-text-bg-color: #b5d6fc;
+  --text-font: "Open Sans", "Clear Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --monospace: ui-monospace, "SFMono-Regular", Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+  --code-block-bg: #f8f8f8; --inline-code-bg: #f3f4f4; --blockquote-border: #dfe2e5; --blockquote-color: #777777; --hr-color: #e7e7e7;
+  --md-char-color: #c0c4c8; --meta-content-color: #777777; --heading-border: #eeeeee;
+}
+html { font-size: 16px; }
+#write h1 { font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid var(--heading-border); padding-bottom: 0.3em; }
+#write h2 { font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid var(--heading-border); padding-bottom: 0.3em; }
+#write h3 { font-size: 1.5em; line-height: 1.43; }
+#write h4 { font-size: 1.25em; } #write h5 { font-size: 1em; } #write h6 { font-size: 1em; color: #777; }
+#write table tr { border-top: 1px solid #dfe2e5; }
+#write a { color: #4183c4; }

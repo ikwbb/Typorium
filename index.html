@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+    <title>Typorium</title>
+    <meta name="description" content="A Typora-style WYSIWYG Markdown editor that runs in the browser and installs as an app." />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Typorium" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./icons/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <style>
+      /* Shown until the app starts. */
+      html, body { margin: 0; height: 100%; background: #fff; }
+      @media (prefers-color-scheme: dark) { html, body { background: #363b40; } }
+      #boot { display: flex; height: 100%; align-items: center; justify-content: center; font: 14px -apple-system, system-ui, sans-serif; color: #888; }
+    </style>
+  </head>
+  <body>
+    <div id="app"><div id="boot">Loading Typorium…</div></div>
+    <noscript>Typorium needs JavaScript to run.</noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

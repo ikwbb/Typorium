@@ -1,0 +1,15 @@
+/* Typorium "Pixyll" theme — airy, large type. Typora theme format. */
+:root {
+  --bg-color: #ffffff; --text-color: #333333; --side-bar-bg-color: #f8f8f8; --control-text-color: #666;
+  --item-hover-bg-color: rgba(0, 0, 0, 0.05); --active-file-bg-color: #eaf2fb; --primary-color: #2f7fd1;
+  --select-text-bg-color: #cde4fb; --window-border: 1px solid #eee;
+  --text-font: Merriweather, "PT Serif", Georgia, "Times New Roman", "Songti SC", serif;
+  --title-font: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --monospace: ui-monospace, Menlo, Consolas, monospace;
+  --code-block-bg: #f7f7f7; --inline-code-bg: #f1f1f1; --blockquote-border: #cccccc; --blockquote-color: #666666; --hr-color: #dddddd;
+  --md-char-color: #c4c4c4; --link-color: #0074d9;
+}
+#write { font-size: 1.125em; line-height: 1.8; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6 { font-family: var(--title-font); font-weight: 700; line-height: 1.2; }
+#write h1 { font-size: 2.6em; } #write h2 { font-size: 2em; } #write h3 { font-size: 1.5em; }
+#write blockquote { font-style: italic; border-left-width: 5px; }

@@ -1,0 +1,14 @@
+/* Typorium "Whitey" theme — minimal, bright, bookish. Typora theme format. */
+:root {
+  --bg-color: #ffffff; --text-color: #222222; --side-bar-bg-color: #fdfdfd; --control-text-color: #6a6a6a;
+  --item-hover-bg-color: rgba(0, 0, 0, 0.04); --active-file-bg-color: #f0f0f0; --primary-color: #222222;
+  --select-text-bg-color: #e3e3e3; --window-border: 1px solid #f0f0f0;
+  --text-font: Vollkorn, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Songti SC", serif;
+  --monospace: ui-monospace, Menlo, Consolas, monospace;
+  --code-block-bg: #fafafa; --code-block-border: #eeeeee; --inline-code-bg: #f5f5f5; --blockquote-border: #e5e5e5; --blockquote-color: #666;
+  --hr-color: #eeeeee; --table-border-color: #e5e5e5; --table-stripe-bg: #fbfbfb; --md-char-color: #cccccc; --link-color: #444;
+}
+#write { font-size: 1.15em; line-height: 1.7; }
+#write h1, #write h2, #write h3 { font-weight: 400; }
+#write h1 { font-size: 2.4em; letter-spacing: -0.01em; } #write h2 { font-size: 1.8em; } #write h3 { font-size: 1.4em; font-style: italic; }
+#write a { text-decoration: underline; color: #444; }
