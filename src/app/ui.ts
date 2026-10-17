@@ -150,6 +150,9 @@ export function showMenu(items: MenuItem[], anchor: { x: number; y: number } | H
       row.addEventListener("mousedown", event => event.preventDefault());
       if (sub) {
         const open = () => {
+          // Only the row whose submenu is showing stays highlighted.
+          if (row.classList.contains("open") && layers.length > depth + 1) return;
+          menu.querySelectorAll(".menu-item.open").forEach(el => el.classList.remove("open"));
           const rect = row.getBoundingClientRect();
           build(sub, depth + 1, { x: rect.right - 2, y: rect.top - 4, parentRect: rect });
           row.classList.add("open");

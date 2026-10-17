@@ -230,7 +230,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   color: inherit; text-align: left; cursor: default; white-space: nowrap;
 }
 @media (pointer: coarse) { .menu-item { min-height: 40px; } }
-.menu-item:hover, .menu-item:focus, .menu-item.open { background: var(--ui-accent); color: var(--ui-on-accent); outline: none; }
+.menu-item:hover, .menu-item:focus-visible, .menu-item.open { background: var(--ui-accent); color: var(--ui-on-accent); outline: none; }
 .menu-item.disabled { opacity: 0.45; }
 .menu-item.disabled:hover { background: transparent; color: inherit; }
 .menu-item.danger { color: #d1242f; }
